@@ -40,10 +40,9 @@ function Decrement() {
             
             sessionStorage.setItem("correctanswer",JSON.stringify(arrCorrectA))
             sessionStorage.setItem("UNcorrectanswer",JSON.stringify(arrUnCorrectA))
-            alert('time up');
             document.getElementById("minutes").textContent="00";
             document.getElementById("seconds").textContent="00";
-            window.location.assign("./result.html");
+            window.location.assign("../html/result.html");
         }
         else {
             secs--;
@@ -121,28 +120,28 @@ const ans4 = document.getElementById("ans4");
 
 function onChecked(){
     if(ans1.checked==true){
-        ans1L.style.backgroundColor = "#f5f3b4";
-        ans2L.style.backgroundColor = "#d1d1d1";
-        ans3L.style.backgroundColor = "#d1d1d1";
-        ans4L.style.backgroundColor = "#d1d1d1";
+        ans1L.style.borderColor = "black";
+        ans2L.style.borderColor = "#d1d1d1";
+        ans3L.style.borderColor = "#d1d1d1";
+        ans4L.style.borderColor = "#d1d1d1";
     }
     if(ans2.checked==true){
-        ans1L.style.backgroundColor = "#d1d1d1";
-        ans2L.style.backgroundColor = "#f5f3b4";
-        ans3L.style.backgroundColor = "#d1d1d1";
-        ans4L.style.backgroundColor = "#d1d1d1";
+        ans1L.style.borderColor = "#d1d1d1";
+        ans2L.style.borderColor = "black";
+        ans3L.style.borderColor = "#d1d1d1";
+        ans4L.style.borderColor = "#d1d1d1";
     }
     if(ans3.checked==true){
-        ans1L.style.backgroundColor = "#d1d1d1";
-        ans2L.style.backgroundColor = "#d1d1d1";
-        ans3L.style.backgroundColor = "#f5f3b4";
-        ans4L.style.backgroundColor = "#d1d1d1";
+        ans1L.style.borderColor = "#d1d1d1";
+        ans2L.style.borderColor = "#d1d1d1";
+        ans3L.style.borderColor = "black";
+        ans4L.style.borderColor = "#d1d1d1";
     }
     if(ans4.checked==true){
-        ans1L.style.backgroundColor = "#d1d1d1";
-        ans2L.style.backgroundColor = "#d1d1d1";
-        ans3L.style.backgroundColor = "#d1d1d1";
-        ans4L.style.backgroundColor = "#f5f3b4";
+        ans1L.style.borderColor = "#d1d1d1";
+        ans2L.style.borderColor = "#d1d1d1";
+        ans3L.style.borderColor = "#d1d1d1";
+        ans4L.style.borderColor = "black";
     }
 }
 
@@ -159,12 +158,11 @@ document.getElementById("quesN").textContent="Question "+(questionNumber+1)+"/"+
 function next(){
     if(questionNumber>= arrq.length-1){
         correct()
-        alert("exam is finish")
         sessionStorage.setItem("correctanswer",JSON.stringify(arrCorrectA))
         sessionStorage.setItem("UNcorrectanswer",JSON.stringify(arrUnCorrectA))
         //console.log(arrUnCorrectA)
         //console.log(arrCorrectA)
-        window.location.assign("./result.html");
+        window.location.assign("../html/result.html");
         return false
     }
     
@@ -225,11 +223,10 @@ function correct(){
 function signout(){
     
     sessionStorage.clear();
-    window.location.href="./index.html";
+    window.location.href="../index.html";
 }
 
 let Info= JSON.parse( sessionStorage.getItem("info"));
 
 let welcomeMessage=document.getElementById("welcomUser").innerHTML=`Welcome ${Info.username}`;
 console.log( welcomeMessage);
-

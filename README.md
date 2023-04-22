@@ -12,7 +12,7 @@ At Jobs Quizzes, we believe that knowledge is power, and we're committed to help
 + Mr. Amro
 + Mr. Abdulrahman
 + Ms. Wesam
-+ Ms. Farah
++ Ms. Farah Almasri
 + Mr. Mohammad
 + Mr. Issa
 
@@ -29,14 +29,8 @@ At Jobs Quizzes, we believe that knowledge is power, and we're committed to help
 
 >* In order to check the website design kindly visit [this link](https://www.figma.com/file/01KIUS6NMMtCpUNXnc12SY/Quiz-Project?node-id=37-764&t=SKxRpDyo9d2I1iFE-0)
 
-# liveURL for Organization :
+# liveURL :
 [quiz4jobs](https://group-4-quiz-website.github.io/G4-Quiz-Website/)
-
-# liveURL for Organization :
-[quiz4jobs](https://abdalrahman-droubi.github.io/Quiz-Website/)
 
 # Trillo link:
 [trillo link](https://trello.com/b/pUsDDPlh/group-4-quiz-webbsite)
-
-# Organization GitHub repo link:
-[Organization GitHub repo link](https://github.com/Group-4-Quiz-Website/G4-Quiz-Website.git)

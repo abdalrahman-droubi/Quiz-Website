@@ -59,7 +59,7 @@
     /* font-size: 2em; */
     letter-spacing: 4px;
     overflow: hidden;
-    background: linear-gradient(90deg, #ff0000, #ff0000);
+    background: linear-gradient(90deg, #f7f7f7, #f7f7f7);
     background-repeat: no-repeat;
     background-size: 80%;
     animation: animate 8s linear infinite;

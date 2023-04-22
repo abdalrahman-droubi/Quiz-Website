@@ -7,7 +7,7 @@
     display: table-cell;
     border-radius: 7%;
     width: auto;
-    background: url(/img/image.png) 0 0/cover
+    background: url(../img/image.png) 0 0/cover
 }
 
 .register-photo .form-container {
@@ -94,4 +94,28 @@
     font-size: 12px;
     opacity: .9;
     text-decoration: none
+}
+.input-error{
+    border: 1px solid red !important;
+    color: red;
+}
+#username-error{
+    color: red;
+    font-size: 10px;
+    padding: 5px 10px;
+}
+#email-error{
+    color: red;
+    font-size: 10px;
+    padding: 5px 10px;
+}
+#pass-error{
+    color: red;
+    font-size: 10px;
+    padding: 5px 10px;
+}
+#check-error{
+    color: red;
+    font-size: 10px;
+    padding: 5px 10px;
 }
